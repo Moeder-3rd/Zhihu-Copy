@@ -52,22 +52,8 @@ img.addEventListener('click',function(){
 })
 let username =document.querySelector('.usernames')
 btn.addEventListener('click',function(){        
-    fetch("localhost:8080" , {  
-        method: 'POST',
-        body:  `Username=${username.value}`
-    })
-    // .then(res=>res.json())//这一步是为了获取响应体
-    // .then(res=>console.log(res))
-    .then(function(res){    
-        if(res.status==200){    
-         window.location.href = '../main/main-homepage/main-homepage.html'
-        } else {    
-            alert('密码错误！')
-        }
-    })
-    // window.location.href = '../main/main-homepage/main-homepage.html'
+    window.location.href = '../main/main-homepage/main-homepage.html'
 })
-    
 
 </script>
 </html>
